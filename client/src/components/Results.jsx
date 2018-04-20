@@ -1,5 +1,5 @@
 import React from "react";
- const Resultws = props =>
+ const Results = props =>   (
  <div className="container">
     <li className="list-group-item">
      <h4>
@@ -17,5 +17,5 @@ import React from "react";
 
     </li>
  </div>
-
+ );
  export default Results;

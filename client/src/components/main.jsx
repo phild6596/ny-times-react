@@ -4,7 +4,9 @@ import Search from "./Search";
 import Results from "./Results";
 import API from "../utils/api";
 
-
+const Main = props => (
+    <div>Hello World</div>
+)
 
 
 
