@@ -4,8 +4,8 @@
   "description": "\"NYT Scraper using React\"",
   "main": "server.js",
   "scripts": {
-    "server":"nodemon server.js",
-    "client":"cd client && npm run start",
+    "server": "node server.js",
+    "client": "cd client && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "cd client && npm run build",
     "deploy": "yarn build && git add . && git commit -m \"Building for production\" && git push heroku master",
@@ -19,7 +19,7 @@
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^3.5.0",
-    "nodemon": "^1.11.0"
+    "nodemon": "^1.17.3"
   },
   "bugs": {
     "url": "https://github.com/phild6596/ny-times-react/issues"
