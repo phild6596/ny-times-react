@@ -1,6 +1,6 @@
 import React from "react";
 
-const Search = props => (
+const Search = props => 
   <div className="container">
     <div className="row">
       <div className="col-lg-12">
@@ -53,6 +53,6 @@ const Search = props => (
     </div>
     <br/><br/>
   </div>
-);
+
 
 export default Search;

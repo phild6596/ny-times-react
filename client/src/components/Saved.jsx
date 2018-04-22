@@ -1,6 +1,6 @@
 import React from "react";
 
-const Saved = props =>  (
+const Saved = props =>  
     <div className="container">
      <li className="list-group-item">
         <h4>
@@ -17,5 +17,5 @@ const Saved = props =>  (
         <p>Published Date: {props.date}</p>
      </li>
     </div>
-);
+
 export default Saved;

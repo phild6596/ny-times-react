@@ -1,5 +1,5 @@
 {
-  "name": "ny-times-react",
+  "name": "mern",
   "version": "1.0.0",
   "description": "\"NYT Scraper using React\"",
   "main": "server.js",
@@ -7,7 +7,7 @@
     "server":"nodemon server.js",
     "client":"cd client && npm run start",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "concurrently \"nodemon server.js\" \"npm run client\""
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,10 @@
   },
   "author": "Phil D.",
   "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^3.5.0",
+    "nodemon": "^1.11.0"
+  },
   "bugs": {
     "url": "https://github.com/phild6596/ny-times-react/issues"
   },

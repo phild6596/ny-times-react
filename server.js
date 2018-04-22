@@ -17,7 +17,13 @@ if (process.env.NODE_ENV === "production") {
     app.use(express.static(__dirname + "/client/public"));
 }
 
-const articleController = require("./server/controllers/article-controller.js");
+app.use((req, res, next) => {
+  res.header('Access-Control-Allow-Origin', '*')
+  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept')
+  next();
+});
+
+const articleController = require("./server/controllers/article-controller");
 const router = new express.Router();
 router.get("/api/saved", articleController.find);
 router.post("/api/saved", articleController.insert);
